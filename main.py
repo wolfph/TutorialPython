@@ -9,12 +9,16 @@ my_dict = {
 }
 print (my_dict["fish"][0])
 
+inventory = {
+  'gold' : 500,
+  'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+  'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
 
+# Adding a key 'burlap bag' and assigning a list to it
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
 
-n = input("Enter a number ")
-def myfunction(n):
-    if type(n) == int and n % 3 == 0:
-        return math.sqrt(n)
-    else:
-        print("Fail")
+# Sorting the list found under the key 'pouch'
+inventory['pouch'].sort()
+
 
