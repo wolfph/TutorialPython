@@ -1,3 +1,5 @@
+import time
+start = time.time()
 #It is a comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order
 def bubblesort(list):
 
@@ -12,4 +14,7 @@ def bubblesort(list):
 
 list = [19,2,31,45,6,11,121,27]
 bubblesort(list)
+end = time.time()
+
 print(list)
+print("The execution time was: " + str(end - start))
